@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.json:json:20240303'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'DestinationHashGenerator'
+        )
+    }
+}
